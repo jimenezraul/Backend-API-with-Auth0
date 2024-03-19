@@ -7,13 +7,17 @@ This is the code for the blog post [Fortifying Your Express.js Backend API with 
 ## Clone the repository
 
 by https
+
 ```bash
 git clone https://github.com/jimenezraul/Backend-API-with-Auth0.git
 ```
+
 by ssh
+
 ```bash
 git clone git@github.com:jimenezraul/Backend-API-with-Auth0.git
 ```
+
 or download the zip file.
 
 ## Install the dependencies
@@ -32,13 +36,13 @@ npm install
 - Define Scopes (Optional): You can define scopes to restrict access to certain parts of your API. This step is optional but useful for fine-grained access control.
 - Save Changes: Once you’ve filled in the necessary information, click on the “Create” button to save your API settings.
 
-## Modify the configuration inside the auth_config.json file
+## Modify the configuration inside the authMiddleware.js file
 
-```json
+```javascript
 {
-  "audience": 'YOUR_API_IDENTIFIER', // audience
-  "issuerBaseURL": 'YOUR_AUTH0_DOMAIN', // issuerBase
-  "tokenSigningAlg": 'YOUR_SIGNING_ALGORITHM', // tokenSigning
+  audience: 'YOUR_API_IDENTIFIER', // audience
+  issuerBaseURL: 'YOUR_AUTH0_DOMAIN', // issuerBase
+  tokenSigningAlg: 'YOUR_SIGNING_ALGORITHM', // tokenSigning
 }
 ```
 
@@ -49,7 +53,9 @@ npm start
 ```
 
 ## Author
+
 Raul Jimenez
 
 ## Blog Post
+
 [Fortifying Your Express.js Backend API with Auth0 Security](https://raulwebdev.com/fortifying-your-express-js-backend-api-with-auth0-security/)
